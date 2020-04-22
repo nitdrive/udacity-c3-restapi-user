@@ -1,26 +1,23 @@
 export const config = {
   "dev": {
-    "username": process.env.POSTGRES_USERNAME,
-    "password": process.env.POSTGRES_PASSWORD,
-    "database": process.env.POSTGRES_DATABASE,
-    "host": process.env.POSTGRES_HOST,
+    "username": "udagramdev",
+    "password": "udagramdev",
+    "database": "udagramdev",
+    "host": "udagramdev.c0q7jt1y7lps.us-east-1.rds.amazonaws.com",
     "dialect": "postgres",
-    "aws_reigion": process.env.AWS_REGION,
-    "aws_profile": process.env.AWS_PROFILE,
-    "aws_media_bucket": process.env.AWS_BUCKET
+    "aws_reigion": "us-east-1",
+    "aws_profile": "default",
+    "aws_media_bucket": "udacity-bucket-nd9990-filestore"
   },
   "prod": {
-    "username": process.env.POSTGRES_USERNAME,
-    "password": process.env.POSTGRES_PASSWORD,
-    "database": process.env.POSTGRES_DATABASE,
-    "host": process.env.POSTGRES_HOST,
-    "dialect": "postgres",
-    "aws_reigion": process.env.AWS_REGION,
-    "aws_profile": process.env.AWS_PROFILE,
-    "aws_media_bucket": process.env.AWS_BUCKET
+    "username": "",
+    "password": "",
+    "database": "udagram_prod",
+    "host": "",
+    "dialect": "postgres"
   },
   "jwt": {
-    "secret": process.env.JWT_SECRET
+    "secret": "c0q7jt1y7lps"
   }
 
 }
